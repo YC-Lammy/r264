@@ -1,0 +1,20 @@
+[package]
+name = "r264"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[dependencies]
+
+[dev-dependencies]
+rand = "*"
+
+[features]
+default = ["simd"]
+simd = []
